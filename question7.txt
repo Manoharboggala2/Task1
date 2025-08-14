@@ -1,0 +1,15 @@
+How Garabage collector works in jvm?
+
+In the Java Virtual Machine (JVM), Garbage Collection (GC) is the process of automatically finding and removing objects from memory that are no longer reachable in a running program.
+
+Object Creation in Heap
+
+Whenever you use new to create an object, it is stored in the heap.
+
+The JVM keeps track of all references to that object.
+
+The GC determines if an object is still reachable (i.e., there’s at least one live reference to it from a thread, stack, static field, or other reachable object).
+
+If no references exist, the object is eligible for garbage collection.
+
+System.gc(); by using this we can use garabage collector

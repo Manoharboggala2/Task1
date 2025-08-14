@@ -1,0 +1,19 @@
+==
+
+Compares reference (memory address) for objects.
+
+For primitive types, compares actual values.
+
+For objects like String, it checks if both references point to the same object in memory.
+
+.equals()
+
+Compares contents of objects (data).
+
+In String class, .equals() is overridden to compare the actual sequence of characters, not memory location.
+
+String s1 = new String("Java");
+String s2 = new String("Java");
+
+System.out.println(s1 == s2);      // false 
+System.out.println(s1.equals(s2)); //true
